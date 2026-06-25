@@ -1,0 +1,26 @@
+{
+  "name": "insta_mechnaics",
+  "version": "1.0.0",
+  "description": "Insta Mechanic (GARRAZO) - On-demand automotive repair service",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd Backend && npm run dev",
+    "start:frontend": "cd Frontend && npx http-server -p 5500 -c-1",
+    "install:all": "npm install && cd Backend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dizzycoder7/Insta_mechnaics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dizzycoder7/Insta_mechnaics/issues"
+  },
+  "homepage": "https://github.com/dizzycoder7/Insta_mechnaics#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "http-server": "^14.1.1"
+  }
+}
